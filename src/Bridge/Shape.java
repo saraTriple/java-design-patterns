@@ -1,15 +1,16 @@
 package src.Bridge;
 
+// Abstraction
 public abstract class Shape {
-    String color;
-    String shapeName;
+    Color color; // Here For Color We use Composition instead of inheritance
 
-    public Shape(String color, String shapeName) {
+    public Shape(Color color) {
         this.color = color;
-        this.shapeName = shapeName;
     }
 
+    public abstract void applyColorToShape();
+
     public String toString() {
-        return "The shape is: " + shapeName +  " with color " + color;
+        return "The shape is with color " + color;
     }
 }
