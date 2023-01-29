@@ -1,14 +1,14 @@
 package src.Bridge2;
 
-public class Bike extends  Vehicle{
+public class Truck extends Vehicle{
 
-    public Bike(WorkShop assembleWorkshop, WorkShop produceWorkshop) {
+    public Truck(WorkShop assembleWorkshop, WorkShop produceWorkshop) {
         super(assembleWorkshop, produceWorkshop);
     }
 
     @Override
     public void manufacture() {
-        System.out.println("Bike");
+        System.out.println("Truck");
         assembleWorkshop.work();
         produceWorkshop.work();
     }

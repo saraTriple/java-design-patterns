@@ -1,11 +1,15 @@
 package src.Bridge2;
 
 public class Car extends Vehicle{
+
+    public Car(WorkShop assembleWorkshop, WorkShop produceWorkshop) {
+        super(assembleWorkshop, produceWorkshop);
+    }
+
     @Override
     public void manufacture() {
-        CarAssembleWorkshop carAssembleWorkshop = new CarAssembleWorkshop();
-        CarProduceWorkshop carProduceWorkshop =new CarProduceWorkshop();
-        carAssembleWorkshop.assemble();
-        carProduceWorkshop.produce();
+        System.out.println("Car");
+        assembleWorkshop.work();
+        produceWorkshop.work();
     }
 }
