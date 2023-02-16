@@ -1,4 +1,4 @@
-package src.Interpretor;
+package src.interpretor;
 
 public class TerminalExpression implements Expression{
     private String data;

@@ -1,4 +1,4 @@
-package src.Interpretor;
+package src.interpretor;
 
 public class Client {
 

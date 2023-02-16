@@ -1,4 +1,4 @@
-package src.Interpretor;
+package src.interpretor;
 
 public class AndExpression implements Expression{
     private Expression expression = null;
