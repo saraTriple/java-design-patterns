@@ -5,16 +5,17 @@ import java.util.Scanner;
 public class Client {
 
     public static void main(String[] args) {
-        PluginFan fanButton = new PluginFan();
+        PullingFan fan = new PullingFan();
+        Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("Press Enter");
-            Scanner scanner = new Scanner(System.in);
+            System.out.print("Press Enter");
             String k = scanner.nextLine();
 
             if (k.isEmpty()) {
-                fanButton.push();
+                fan.push();
             }
+
         }
     }
 }
